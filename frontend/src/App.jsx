@@ -39,7 +39,7 @@ const handleSearch = async (q) => {
   }, 1500);
 
   try {
-    const res = await fetch("http://localhost:8000/search", {
+    const res = await fetch("https://agentic-search-gjmq.onrender.com/search", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query: q }),
